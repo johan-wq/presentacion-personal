@@ -1,6 +1,6 @@
 root {
   --bg: #f5f7fa;
-  --surface: #ffffff;
+  --surface: #f25959;
   --text: #1f2937;
   --muted: #6b7280;
   --primary: #2563eb;
@@ -36,7 +36,7 @@ body {
 .sidebar {
   width: 230px;
   background: var(--primary);
-  color: #fff;
+  color: #e40d0d;
   padding: 20px;
   position: fixed;
   top: 0;
