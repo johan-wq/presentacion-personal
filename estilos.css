@@ -1,0 +1,169 @@
+  b/head>
+<body>
+  <div class="layout">
+    
+    <!-- Menú lateral -->
+    <nav class="sidebar">
+      <h2>Menú</h2>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="content">
+      <section id="inicio" class="container">
+        <div class="profile">
+          <img src="tu-foto.jpg" alt="Foto de perfil">
+          <div>
+            <h1>Johan David Ramírez Narváez</h1>
+            <p class="resumen">
+              Soy estudiante de Análisis y Desarrollo de Software (ADSO) en el SENA.  
+              Me apasiona la programación y la innovación tecnológica.  
+              Busco oportunidades para aplicar mis conocimientos en proyectos reales.
+            </p>
+          </div>
+        </div>
+
+        <section>
+          <h2>Carrera / Especialidad</h2>
+          <p>Tecnólogo en Análisis y Desarrollo de Software (ADSO) – SENA</p>
+        </section>
+
+        <section>
+          <h2>Frase personal</h2>
+          <p>"Apasionado por la tecnología y el aprendizaje constante, siempre buscando crecer y aportar soluciones creativas."</p>
+        </section>
+
+        <section>
+          <h2>Idiomas</h2>
+          <ul>
+            <li>Español (Nativo)</li>
+            <li>Inglés (Básico – en aprendizaje)</li>
+          </ul>
+        </section>
+
+        <section class="links">
+          <h2>Redes Profesionales</h2>
+          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com" target="_blank">GitHub</a>
+        </section>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
+2. styles.css
+css
+Copiar
+Editar
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  color: #333;
+}
+
+.layout {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #4a90e2;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  color: #d1e4ff;
+}
+
+/* Contenido */
+.content {
+  margin-left: 240px; /* espacio para el menú */
+  padding: 30px;
+  flex: 1;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #4a90e2;
+}
+
+h1 {
+  margin: 0;
+  color: #4a90e2;
+}
+
+.resumen {
+  margin: 10px 0;
+}
+
+section {
+  margin-top: 25px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+  background: #4a90e2;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-right: 10px;
+  transition: background 0.3s;
+}
+
+.links a:hover {
+  background: #357ABD;
+}
